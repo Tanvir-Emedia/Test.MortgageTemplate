@@ -1,0 +1,53 @@
+﻿@model ProjectOnHomeShop.ViewModel.HomeViewModel
+
+@{ var country = new List<SelectListItem>
+    { new SelectListItem {Text="Select" ,Value="1",Selected=true },
+    new SelectListItem { Text="India",Value="2",Selected=true},
+    new SelectListItem { Text="UK",Value="3",Selected=true },
+    new SelectListItem {Text="US",Value="4",Selected=true },
+    new SelectListItem {Text="Germany",Value="5" ,Selected=true }};
+
+    ViewBag.country = country;
+}
+
+@using (Html.BeginForm("LocationInfo", "Home", FormMethod.Post))
+{<div>
+        <div>
+            <div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 commondiv">
+                    @Html.LabelFor(m => m.placedata.AddressLine1)
+                    @Html.TextBoxFor(m => m.placedata.AddressLine1, new { @class = "inputField" })
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 commondiv">
+                    @Html.LabelFor(m => m.placedata.AddressLine2)
+                    @Html.TextBoxFor(m => m.placedata.AddressLine2, new { @class = "inputField" })
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 commondiv">
+                    @Html.LabelFor(m => m.placedata.AddressLine3)
+                    @Html.TextBoxFor(m => m.placedata.AddressLine3, new { @class = "inputField" })
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 commondiv">
+                    @Html.LabelFor(m => m.placedata.City)
+                    @Html.TextBoxFor(m => m.placedata.City, new { @class = "inputField" })
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 commondiv">
+                    @Html.LabelFor(m => m.placedata.Town)
+                    @Html.TextBoxFor(m => m.placedata.Town, new { @class = "inputField" })
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 commondiv">
+                    @Html.LabelFor(m => m.placedata.PostCode)
+                    @Html.TextBoxFor(m => m.placedata.PostCode, new { @class = "inputField" })
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+     <div class="clearfix"></div>
+        <div >
+            <input  type="submit" value="Submit" class="submitbutton"/>
+        </div>
+    </div>
+
+}

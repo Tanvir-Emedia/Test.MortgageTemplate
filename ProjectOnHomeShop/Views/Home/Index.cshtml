@@ -1,0 +1,106 @@
+﻿
+@{
+    Layout="~/Views/Shared/_Layout.cshtml";
+}
+
+@model ProjectOnHomeShop.ViewModel.HomeViewModel
+
+<div>
+<div class="div1color">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div1inner">
+                <div class="div1inner2">
+                    <h2>No matter your circumstances receive free mortgage advice</h2>
+                        <p>
+                            getting a mortgage agreed in principle puts you in a much stronger buying position,but how do you know if you have secured the best deal
+                            the houseshop.com work with some of the best independent mortgage brokers who will search the market for the best possible deal and present you with a range of options from a variety of different lenders.
+                        </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding ">
+                
+                <div class="formbackground">
+                    <h2 >START HERE</h2>
+                    @Html.Partial("_PartialClientInfo",Model)
+                    <p> <input type="checkbox" data-toggle="collapse" data-target="#demo"/>I Can't Find my address check this box to manually enter you address below.</p> 
+                    <div id="demo" class="collapse"> 
+                     @Html.Partial("_PartialLocationInfo", Model)
+                    </div>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+</div>
+<div class="clearfix"></div>
+  
+<div>
+<div class="container div2design">
+
+
+ <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col5design">
+            <div>
+                <h2 class="headerdesign">  Mortgae Broker Advice</h2>
+
+            </div>
+            <div>
+
+                <p class="p1design"><b>Have you got the best Mortgage deal?</b></p>
+                <p class="pdesign">FREE Advice From independent mortgage broker</p>
+                <p class="p1design"><b>simply:</b></p>
+                <div>
+                    <ul class="col5limargin">
+                        <li><i class="fa fa-star" aria-hidden="true"></i> complete our mortgage enquiry form.</li>
+                        <li><i class="fa fa-star"></i>Receive free,no-obligation ,independent mortgage advice learn the exact amount you can expect to borrow.</li>
+                        <li><i class="fa fa-star"></i>View Mortgage Products across the market.</li>
+                        <li><i class="fa fa-star"></i>get the information you need to make an informed decision.</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+ <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col7design">
+
+            <p> Ideal For the FirstTime buyers,remortgages,paying debts,raising funds,Buy-To-Let mortgages and buying a new home.</p>
+
+            <div>
+                <ul>
+                    <li><i class="fa fa-star"></i>The best mortgage rates in uk.</li>
+                    <li><i class="fa fa-star"></i>unlimited access to uk Mortgage Market.</li>
+                    <li><i class="fa fa-star"></i> Fixed rates and tracker rates available.</li>
+                    <li><i class="fa fa-star"></i> secured loans and insurance products offered.</li>
+                    <li><i class="fa fa-star"></i> Capital raising and debt consolidation options.</li>
+                    <li><i class="fa fa-star"></i> interest only and repayment mortgages available.</li>
+                    <li><i class="fa fa-star"></i>buy to let mortgages</li>
+                    <li><i class="fa fa-star"></i>adverse credit mortgages.</li>
+                    <li><i class="fa fa-star"></i>firsttime buyer mortgages.</li>
+                </ul>
+            </div>
+           
+ </div>
+
+        <div class="clearfix"></div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div>
+    <div class="container div3design">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h2><i class="fa fa-user-o" aria-hidden="true"></i></h2>
+            <p><b>Complete Enquiery Form:</b></p>
+          
+            <p>Complete the short enquery form at the top right of the page to send your details to an independent mortgage broker.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h2><i class="fa fa-handshake-o" aria-hidden="true"></i></h2>
+            <p><b>Proffesional Bespoke Advise</b></p>
+
+            <p> Your personal mortgage broker will contact you to discuss your mortgage and insurance needs and submit your mortgage application.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h2><i class="fa fa-file-text-o" aria-hidden="true"></i></h2>
+            <p><b>Provide Documents:</b></p>
+            <p>To proceed with the best deals the mortgage broker will explain which document is needed to move forword with your enquery.</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="clearfix"></div>
